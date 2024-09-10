@@ -1,3 +1,4 @@
+import { AppProvider } from "home/AppContext";
 import Footer from "home/Footer";
 import Header from "home/Header";
 import "home/index.scss";
@@ -24,4 +25,8 @@ if (!rootElement) throw new Error("Failed to find the root element");
 
 const root = ReactDOM.createRoot(rootElement);
 
-root.render(<App />);
+root.render(
+  <AppProvider>
+    <App />
+  </AppProvider>
+);
