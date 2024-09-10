@@ -72,6 +72,7 @@ module.exports = (_, argv) => ({
         "./Footer": "./src/Footer.jsx",
         "./AppContext": "./src/AppContext.jsx",
         "./index.scss": "./src/index.scss",
+        "./shared": "./src/shared.js",
       },
       shared: {
         ...deps,
